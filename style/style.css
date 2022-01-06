@@ -1,0 +1,518 @@
+@import 'fonts.css';
+
+/* ROOT START */
+
+:root {
+  --f900: 'Raleway-Black';
+  --f700: 'Raleway-Bold';
+  --f300: 'Raleway-Light';
+  --f400: 'Raleway-Regular';
+  --f100: 'Raleway-Thin';
+  --green: #69cf17;
+  --green_25: rgba(106, 207, 23, 0.25);
+  --green_75: rgba(106, 207, 23, 0.75);
+  --green_90: rgba(106, 207, 23, 0.90);
+  --white: #ffffff;
+  --gray: #dedede;
+  --gray_dark: #7a7a7a;
+  --dark: #060002;
+  --logo_in: #4e9f0d;
+  --logo_out: #62be19;
+  --logo_shadow: rgba(30, 30, 30, 0.15);
+  --col-1: calc(100% / 12);
+  --col-2: calc(100% / 12 * 2);
+  --col-3: calc(100% / 12 * 3);
+  --col-4: calc(100% / 12 * 4);
+  --col-5: calc(100% / 12 * 5);
+  --col-6: calc(100% / 12 * 6);
+  --col-7: calc(100% / 12 * 7);
+  --col-8: calc(100% / 12 * 8);
+  --col-9: calc(100% / 12 * 9);
+  --col-10: calc(100% / 12 * 10);
+  --col-11: calc(100% / 12 * 11);
+  --col-12: calc(100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  width: var(--col-1);
+  padding: 0 15px;
+}
+.col-2 {
+  width: var(--col-2);
+  padding: 0 15px;
+}
+.col-3 {
+  width: var(--col-3);
+  padding: 0 15px;
+}
+.col-4 {
+  width: var(--col-4);
+  padding: 0 15px;
+}
+.col-5 {
+  width: var(--col-5);
+  padding: 0 15px;
+}
+.col-6 {
+  width: var(--col-6);
+  padding: 0 15px;
+}
+.col-7 {
+  width: var(--col-7);
+  padding: 0 15px;
+}
+.col-8 {
+  width: var(--col-8);
+  padding: 0 15px;
+}
+.col-9 {
+  width: var(--col-9);
+  padding: 0 15px;
+}
+.col-10 {
+  width: var(--col-10);
+  padding: 0 15px;
+}
+.col-11 {
+  width: var(--col-11);
+  padding: 0 15px;
+}
+.col-12 {
+  width: var(--col-12);
+  padding: 0 15px;
+}
+
+.container {
+  margin: auto;
+  max-width: 1140px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.flex-grow-1 {
+  /* Otasida flex yoqilganda bosh joyni toliq qamrab oladi */
+  flex-grow: 1;
+}
+.arrow{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  box-shadow: 5px 5px 5px 0 var(--green_25);
+  color: var(--white);
+  display: block;
+  background: var(--green);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50% ;
+  font-family: var(--f900);
+  font-size: 36px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+html, body{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--f400);
+  background: var(--dark);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--logo_in);
+  font-size: 24px;
+  line-height: 17px;
+  padding: 8px 29px;
+  border: 3px solid var(--logo_out);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0 var(--logo_shadow) inset;
+  display: block;
+  width: max-content;
+}
+
+/* ROOT END */
+/* ******************* */
+/* HEADER START */
+
+.header {
+  background: url(../images/bg_img.jpg) no-repeat center /cover;
+  background-attachment: fixed;
+}
+
+.header-menu__link {
+  padding: 38px 36px;
+  display: block;
+  font-family: var(--f300);
+  color: var(--green);
+  line-height: 15px;
+  font-size: 20px;
+  transition: color 0.5s, background 0.5s;
+}
+
+.header-menu__link:hover {
+  color: var(--white);
+  background: var(--green_75);
+}
+
+.header__title {
+  font-size: 72px;
+  color: var(--green);
+  text-transform: uppercase;
+  line-height: 50px;
+  margin-bottom: 15px;
+}
+
+.header__subtitle {
+  color: var(--green);
+  line-height: 25px;
+  font-size: 36px;
+}
+
+.header__text {
+  margin: 36px 0 75px;
+  color: var(--white);
+}
+
+.price {
+  font-size: 60px;
+  font-family: var(--f100);
+  background: var(--green_75);
+  padding: 23px 93px;
+  display: block;
+  width: max-content;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+/* HEADER END */
+/* ***************/
+/* MAIN START */
+
+.main {
+  padding-top: 49px;
+}
+
+.main-menu__link {
+  margin-right: 53px;
+  color: var(--gray_dark);
+  font-size: 24px;
+  line-height: 22px;
+  transition: color 0.5s;
+  display: block;
+}
+
+.main-menu__link:hover {
+  color: var(--green);
+}
+.burgers{
+  margin: 71px 0 51px;
+}
+.burger__card{
+  position: relative;
+}
+.burger__card img{
+  width: 100%;
+  display: block;
+}
+.card{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  color: var(--white);
+  line-height: 18px;
+  background: var(--green_90);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.card:hover{
+  opacity: 1;
+} 
+.burger__card:hover  .card{
+  opacity: 1;
+}
+
+
+.burger__price{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--green_90);
+  padding: 22px 58px;
+  display: block;
+  color: var(--white);
+  line-height: 20px;
+  font-size: 24px;
+  transition: 0.5s;
+}
+.burger__card:hover .burger__price{
+  opacity: 0;
+}
+.burger__title{
+  margin: 37px 0 18px;
+  color: var(--green);
+  font-size: 24px;
+  font-family: var(--f900);
+  line-height: 17px;
+}
+.burger__text{
+  color: var(--white);
+  line-height: 24px;
+  margin-bottom: 53px;
+}
+
+
+.section{
+  background: url(../images/section_bg.jpg) no-repeat center /cover;
+  background-attachment: fixed;
+  padding: 51px 0 173px ;
+}
+.section__title{
+  color: var(--green);
+  text-align: center;
+  font-size:36px;
+  text-transform: uppercase;
+  line-height: 28px;
+  width: max-content;
+}
+.section__title::after{
+  content: '';
+  margin: 23px auto 50px;
+  display: block;
+  height: 1px ;
+  background: var(--green);
+  width: 87%;
+}
+.section__text{
+    color: var(--white);
+    line-height: 24px;
+}
+.section__text:first-of-type{
+  margin-bottom: 31px ;
+}
+.location__title{
+  color: var(--green);
+  background: var(--white);
+  font-size: 36px;
+  line-height: 26px;
+  text-align: center;
+  padding: 51px 0 58px;
+  text-transform: uppercase;
+}
+.location iframe{
+  display: block;
+}
+.footer__menu{
+  justify-content: space-around;
+  margin: 29px auto 19px;
+}
+.footer-menu__links{
+  color: var(--white);
+  font-family: var(--f100);
+  font-size: 18px;
+  line-height: 17px;
+  margin: 22px;
+  display: block;
+  transition:  0.5s;
+}
+.footer-menu__links:hover{
+  color: var(--green);
+  transform: scale(1.2);
+}
+
+.copyright{
+  text-align: center;
+  color: var(--gray);
+}
+
+
+.footer{
+  padding: 40px 0 50px;
+}
+.tel{
+  font-size:24px;
+  color: var(--green);
+  font-family: var(--f700);
+}
+
+
+
+/* MAIN END */
+/* ***************/
+/* MEDIA START */
+
+@media(max-width: 780px) {
+  .burger{
+    width: var(--col-6);
+  }
+}
+@media(max-width: 780px) {
+  .main-menu__link {
+    margin: 15px;
+  }
+
+  .main__menu {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 760px) {
+  .nav .container {
+    flex-direction: column;
+  }
+
+  .nav .logo {
+    margin-top: 15px;
+  }
+}
+
+@media(max-width: 740px) {
+  .header__title {
+    line-height: 70px;
+  }
+
+  .price {
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 580px) {
+  .nav .container {
+    width: calc(100% / 3 * 2);
+  }
+
+  .header__menu {
+    justify-content: space-evenly;
+  }
+}
+
+@media(max-width: 510px) {
+  .nav .container {
+    width: 85%;
+  }
+
+  .header__title {
+    font-size: 50px;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .burger{
+    width: var(--col-10);
+    margin: auto;
+  }
+}
+
+@media(max-width: 430px) {
+  .footer__contacts{
+    justify-content: center;
+  }
+  .tel{
+    margin-top: 15px;
+  }
+}
+@media(max-width: 400px) {
+  .header__menu {
+    display: none;
+  }
+
+  .nav .logo {
+    margin-bottom: 15px;
+  }
+
+  .price {
+    padding: 15px 70px;
+    font-size: 40px;
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+
+  .header__subtitle {
+    font-size: 20px;
+  }
+}
+@media(max-width: 300px) {
+  .burger__price{
+    padding: 12px 0;
+    position: relative;
+    background: transparent;
+    font-family: var(--f400);
+    color: var(--green);
+  }
+  .burger__price::before{
+    content: 'Price : ';
+    font-family: var(--f400);
+  }
+  .price{
+    padding: 15px 35px;
+  }
+}
+
+/* MEDIA END */
